@@ -1,0 +1,18 @@
+@import 'tailwindcss';
+
+/* Enable class-based dark mode (used by the theme toggle in a later task). */
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  color-scheme: light dark;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  @apply bg-slate-50 text-slate-900 antialiased dark:bg-slate-950 dark:text-slate-100;
+}
